@@ -1,4 +1,5 @@
+(async function(){
 const app = require('../app');
-app.listen(3000, function () {
-    console.log('Dhanuka Api Server is running.. on Port ' + 3000);
-});
+const server = await app.listen(3000);
+console.log('running',3000);
+})();
